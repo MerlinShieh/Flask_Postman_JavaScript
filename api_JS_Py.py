@@ -174,7 +174,9 @@ def test():
 			data = (request.get_json() if
 					RespHeaders.ContentType.is_json() else dict(request.form) if
 			RespHeaders.ContentType.is_form_data() else dict(request.values))
-			_log(data)
+			_log('is_json' + str(RespHeaders.ContentType.is_json()))
+			_log('is_form_data' + str(RespHeaders.ContentType.is_form_data()))
+			_log('is_form_urlendecoded' + str(RespHeaders.ContentType.is_form_urlencoded()))
 			return RespResult.success(data=data)
 		except:
 			return RespResult.error(data=traceback.extract_stack())
