@@ -1,0 +1,63 @@
+2022-02-15 20:49:08,280    api_JS_Py.py    --->  [INFO]   _log   line:81  : 
+接口名称：JSON 格式(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：{
+    "name": "戴芳",
+    "age": 60
+}
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":39,"system":true}],"method":"POST","body":{"mode":"raw","raw":"{\n    \"name\": \"戴芳\",\n    \"age\": 60\n}"},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": 60, 
+    "name": "\u6234\u82b3"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-15 20:49:08,316    api_JS_Py.py    --->  [INFO]   _log   line:81  : JSON 格式(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [{"replace": "/", "value": "{"request_time":"{\"age\":60,\"name\":\"戴芳\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}", "prev": "{"request_time":"{\"age\":79,\"name\":\"雷磊\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}"}], "glo": []}
+
+2022-02-15 20:49:13,099    api_JS_Py.py    --->  [INFO]   _log   line:81  : 
+接口名称：form-data 格式(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"disabled":true,"key":"Content-Type","value":"application/json,application/x-www-form-urlencoded,application/form-data"},{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------772742514537538740970260","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"侯芳","type":"string"},{"key":"age","value":"56","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": "56", 
+    "name": "\u4faf\u82b3"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-15 20:49:13,129    api_JS_Py.py    --->  [INFO]   _log   line:81  : form-data 格式(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 20:49:20,041    api_JS_Py.py    --->  [INFO]   _log   line:81  : 
+接口名称：form-urlencoded 格式(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：name=顾伟&age=65
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"application/x-www-form-urlencoded","system":true},{"key":"Content-Length","value":30,"system":true}],"method":"POST","body":{"mode":"urlencoded","urlencoded":[{"key":"name","value":"顾伟"},{"key":"age","value":"65"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": "65", 
+    "name": "\u987e\u4f1f"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-15 20:49:20,069    api_JS_Py.py    --->  [INFO]   _log   line:81  : form-urlencoded 格式(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
