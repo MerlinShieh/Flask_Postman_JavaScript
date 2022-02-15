@@ -1,0 +1,17 @@
+2022-02-15 19:34:07,841    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data()
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------659227727237654097998315","system":true},{"key":"Content-Length","value":271,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"郝秀英","type":"string"},{"key":"age","value":"2","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 19:34:07,860    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data()：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+

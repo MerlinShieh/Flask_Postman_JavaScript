@@ -1,0 +1,20 @@
+2022-02-15 20:31:49,690    api_JS_Py.py    --->  [INFO]   _log   line:81  : 
+接口名称：测试接口 form-urlencoded(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：name=尹芳&age=25
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"application/x-www-form-urlencoded","system":true},{"key":"Content-Length","value":30,"system":true}],"method":"POST","body":{"mode":"urlencoded","urlencoded":[{"key":"name","value":"尹芳"},{"key":"age","value":"25"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": "25", 
+    "name": "\u5c39\u82b3"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-15 20:31:49,705    api_JS_Py.py    --->  [INFO]   _log   line:81  : 测试接口 form-urlencoded(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+

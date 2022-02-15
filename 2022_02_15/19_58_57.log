@@ -1,0 +1,415 @@
+2022-02-15 19:59:00,477    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data Copy(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":0,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[]},"type":"http"}
+返回结果：<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>TypeError: Object of type FrameSummary is not JSON serializable // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css"
+        type="text/css">
+    <!-- We need to make sure this has a favicon so that the debugger does
+         not accidentally trigger a request to /favicon.ico which might
+         change the application's state. -->
+    <link rel="shortcut icon"
+        href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+    <script type="text/javascript">
+      var TRACEBACK = 2433757318880,
+          CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "oHysn5Ph2ghngzGDiES9";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>TypeError</h1>
+<div class="detail">
+  <p class="errormsg">TypeError: Object of type FrameSummary is not JSON serializable</p>
+</div>
+<h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-2433757319120">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2088</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758453824">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2073</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">                </span>error = e</pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre>
+<pre class="line after"><span class="ws">                </span>raise</pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)</pre>
+<pre class="line after"><span class="ws">        </span>finally:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454064">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2070</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)</pre>
+<pre class="line before"><span class="ws">        </span>error: t.Optional[BaseException] = None</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">                </span>error = e</pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758453968">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1516</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line current"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre>
+<pre class="line after"><span class="ws">        </span>self,</pre>
+<pre class="line after"><span class="ws">        </span>rv: t.Union[ResponseReturnValue, HTTPException],</pre>
+<pre class="line after"><span class="ws">        </span>from_error_handler: bool = False,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758453872">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1535</em>,
+      in <code class="function">finalize_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>with the `from_error_handler` flag.  If enabled, failures in</pre>
+<pre class="line before"><span class="ws">        </span>response processing will be logged and otherwise ignored.</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>:internal:</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>response = self.make_response(rv)</pre>
+<pre class="line after"><span class="ws">        </span>try:</pre>
+<pre class="line after"><span class="ws">            </span>response = self.process_response(response)</pre>
+<pre class="line after"><span class="ws">            </span>request_finished.send(self, response=response)</pre>
+<pre class="line after"><span class="ws">        </span>except Exception:</pre>
+<pre class="line after"><span class="ws">            </span>if not from_error_handler:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454016">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1713</em>,
+      in <code class="function">make_response</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">                </span># waiting to do it manually, so that the class can handle any</pre>
+<pre class="line before"><span class="ws">                </span># special logic</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.response_class(rv, status=status, headers=headers)</pre>
+<pre class="line before"><span class="ws">                </span>status = headers = None</pre>
+<pre class="line before"><span class="ws">            </span>elif isinstance(rv, dict):</pre>
+<pre class="line current"><span class="ws">                </span>rv = jsonify(rv)</pre>
+<pre class="line after"><span class="ws">            </span>elif isinstance(rv, BaseResponse) or callable(rv):</pre>
+<pre class="line after"><span class="ws">                </span># evaluate a WSGI callable, or coerce a different response</pre>
+<pre class="line after"><span class="ws">                </span># class to the correct type</pre>
+<pre class="line after"><span class="ws">                </span>try:</pre>
+<pre class="line after"><span class="ws">                    </span>rv = self.response_class.force_type(rv, request.environ)  # type: ignore  # noqa: B950</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758453920">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py"</cite>,
+      line <em class="line">348</em>,
+      in <code class="function">jsonify</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>data = args[0]</pre>
+<pre class="line before"><span class="ws">    </span>else:</pre>
+<pre class="line before"><span class="ws">        </span>data = args or kwargs</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>return current_app.response_class(</pre>
+<pre class="line current"><span class="ws">        </span>f&quot;{dumps(data, indent=indent, separators=separators)}\n&quot;,</pre>
+<pre class="line after"><span class="ws">        </span>mimetype=current_app.config[&quot;JSONIFY_MIMETYPE&quot;],</pre>
+<pre class="line after"><span class="ws">    </span>)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454112">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py"</cite>,
+      line <em class="line">129</em>,
+      in <code class="function">dumps</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>``app`` can be passed directly, rather than requiring an app</pre>
+<pre class="line before"><span class="ws">        </span>context for configuration.</pre>
+<pre class="line before"><span class="ws">    </span>&quot;&quot;&quot;</pre>
+<pre class="line before"><span class="ws">    </span>_dump_arg_defaults(kwargs, app=app)</pre>
+<pre class="line before"><span class="ws">    </span>encoding = kwargs.pop(&quot;encoding&quot;, None)</pre>
+<pre class="line current"><span class="ws">    </span>rv = _json.dumps(obj, **kwargs)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>if encoding is not None:</pre>
+<pre class="line after"><span class="ws">        </span>warnings.warn(</pre>
+<pre class="line after"><span class="ws">            </span>&quot;&#x27;encoding&#x27; is deprecated and will be removed in Flask 2.1.&quot;,</pre>
+<pre class="line after"><span class="ws">            </span>DeprecationWarning,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454160">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\json\__init__.py"</cite>,
+      line <em class="line">234</em>,
+      in <code class="function">dumps</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>cls is None and indent is None and separators is None and</pre>
+<pre class="line before"><span class="ws">        </span>default is None and not sort_keys and not kw):</pre>
+<pre class="line before"><span class="ws">        </span>return _default_encoder.encode(obj)</pre>
+<pre class="line before"><span class="ws">    </span>if cls is None:</pre>
+<pre class="line before"><span class="ws">        </span>cls = JSONEncoder</pre>
+<pre class="line current"><span class="ws">    </span>return cls(</pre>
+<pre class="line after"><span class="ws">        </span>skipkeys=skipkeys, ensure_ascii=ensure_ascii,</pre>
+<pre class="line after"><span class="ws">        </span>check_circular=check_circular, allow_nan=allow_nan, indent=indent,</pre>
+<pre class="line after"><span class="ws">        </span>separators=separators, default=default, sort_keys=sort_keys,</pre>
+<pre class="line after"><span class="ws">        </span>**kw).encode(obj)</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454208">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\json\encoder.py"</cite>,
+      line <em class="line">201</em>,
+      in <code class="function">encode</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span># This doesn&#x27;t pass the iterator directly to &#x27;&#x27;.join() because the</pre>
+<pre class="line before"><span class="ws">        </span># exceptions aren&#x27;t as detailed.  The list call should be roughly</pre>
+<pre class="line before"><span class="ws">        </span># equivalent to the PySequence_Fast that &#x27;&#x27;.join() would do.</pre>
+<pre class="line before"><span class="ws">        </span>chunks = self.iterencode(o, _one_shot=True)</pre>
+<pre class="line before"><span class="ws">        </span>if not isinstance(chunks, (list, tuple)):</pre>
+<pre class="line current"><span class="ws">            </span>chunks = list(chunks)</pre>
+<pre class="line after"><span class="ws">        </span>return &#x27;&#x27;.join(chunks)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def iterencode(self, o, _one_shot=False):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Encode the given object and yield each string</pre>
+<pre class="line after"><span class="ws">        </span>representation as available.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454256">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\json\encoder.py"</cite>,
+      line <em class="line">431</em>,
+      in <code class="function">_iterencode</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span># see comment for int/float in _make_iterencode</pre>
+<pre class="line before"><span class="ws">            </span>yield _floatstr(o)</pre>
+<pre class="line before"><span class="ws">        </span>elif isinstance(o, (list, tuple)):</pre>
+<pre class="line before"><span class="ws">            </span>yield from _iterencode_list(o, _current_indent_level)</pre>
+<pre class="line before"><span class="ws">        </span>elif isinstance(o, dict):</pre>
+<pre class="line current"><span class="ws">            </span>yield from _iterencode_dict(o, _current_indent_level)</pre>
+<pre class="line after"><span class="ws">        </span>else:</pre>
+<pre class="line after"><span class="ws">            </span>if markers is not None:</pre>
+<pre class="line after"><span class="ws">                </span>markerid = id(o)</pre>
+<pre class="line after"><span class="ws">                </span>if markerid in markers:</pre>
+<pre class="line after"><span class="ws">                    </span>raise ValueError(&quot;Circular reference detected&quot;)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454304">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\json\encoder.py"</cite>,
+      line <em class="line">405</em>,
+      in <code class="function">_iterencode_dict</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">                    </span>chunks = _iterencode_list(value, _current_indent_level)</pre>
+<pre class="line before"><span class="ws">                </span>elif isinstance(value, dict):</pre>
+<pre class="line before"><span class="ws">                    </span>chunks = _iterencode_dict(value, _current_indent_level)</pre>
+<pre class="line before"><span class="ws">                </span>else:</pre>
+<pre class="line before"><span class="ws">                    </span>chunks = _iterencode(value, _current_indent_level)</pre>
+<pre class="line current"><span class="ws">                </span>yield from chunks</pre>
+<pre class="line after"><span class="ws">        </span>if newline_indent is not None:</pre>
+<pre class="line after"><span class="ws">            </span>_current_indent_level -= 1</pre>
+<pre class="line after"><span class="ws">            </span>yield &#x27;\n&#x27; + _indent * _current_indent_level</pre>
+<pre class="line after"><span class="ws">        </span>yield &#x27;}&#x27;</pre>
+<pre class="line after"><span class="ws">        </span>if markers is not None:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454352">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\json\encoder.py"</cite>,
+      line <em class="line">325</em>,
+      in <code class="function">_iterencode_list</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">                    </span>chunks = _iterencode_list(value, _current_indent_level)</pre>
+<pre class="line before"><span class="ws">                </span>elif isinstance(value, dict):</pre>
+<pre class="line before"><span class="ws">                    </span>chunks = _iterencode_dict(value, _current_indent_level)</pre>
+<pre class="line before"><span class="ws">                </span>else:</pre>
+<pre class="line before"><span class="ws">                    </span>chunks = _iterencode(value, _current_indent_level)</pre>
+<pre class="line current"><span class="ws">                </span>yield from chunks</pre>
+<pre class="line after"><span class="ws">        </span>if newline_indent is not None:</pre>
+<pre class="line after"><span class="ws">            </span>_current_indent_level -= 1</pre>
+<pre class="line after"><span class="ws">            </span>yield &#x27;\n&#x27; + _indent * _current_indent_level</pre>
+<pre class="line after"><span class="ws">        </span>yield &#x27;]&#x27;</pre>
+<pre class="line after"><span class="ws">        </span>if markers is not None:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454400">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\json\encoder.py"</cite>,
+      line <em class="line">438</em>,
+      in <code class="function">_iterencode</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>if markers is not None:</pre>
+<pre class="line before"><span class="ws">                </span>markerid = id(o)</pre>
+<pre class="line before"><span class="ws">                </span>if markerid in markers:</pre>
+<pre class="line before"><span class="ws">                    </span>raise ValueError(&quot;Circular reference detected&quot;)</pre>
+<pre class="line before"><span class="ws">                </span>markers[markerid] = o</pre>
+<pre class="line current"><span class="ws">            </span>o = _default(o)</pre>
+<pre class="line after"><span class="ws">            </span>yield from _iterencode(o, _current_indent_level)</pre>
+<pre class="line after"><span class="ws">            </span>if markers is not None:</pre>
+<pre class="line after"><span class="ws">                </span>del markers[markerid]</pre>
+<pre class="line after"><span class="ws">    </span>return _iterencode</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454448">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py"</cite>,
+      line <em class="line">56</em>,
+      in <code class="function">default</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>return str(o)</pre>
+<pre class="line before"><span class="ws">        </span>if dataclasses and dataclasses.is_dataclass(o):</pre>
+<pre class="line before"><span class="ws">            </span>return dataclasses.asdict(o)</pre>
+<pre class="line before"><span class="ws">        </span>if hasattr(o, &quot;__html__&quot;):</pre>
+<pre class="line before"><span class="ws">            </span>return str(o.__html__())</pre>
+<pre class="line current"><span class="ws">        </span>return super().default(o)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>class JSONDecoder(_json.JSONDecoder):</pre>
+<pre class="line after"><span class="ws">    </span>&quot;&quot;&quot;The default JSON decoder.</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-2433758454496">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\json\encoder.py"</cite>,
+      line <em class="line">179</em>,
+      in <code class="function">default</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">                    </span>return list(iterable)</pre>
+<pre class="line before"><span class="ws">                </span># Let the base class default method raise the TypeError</pre>
+<pre class="line before"><span class="ws">                </span>return JSONEncoder.default(self, o)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>raise TypeError(f&#x27;Object of type {o.__class__.__name__} &#x27;</pre>
+<pre class="line after"><span class="ws">                        </span>f&#x27;is not JSON serializable&#x27;)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def encode(self, o):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Return a JSON string representation of a Python data structure.</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+</ul>
+  <blockquote>TypeError: Object of type FrameSummary is not JSON serializable</blockquote>
+</div>
+
+<div class="plain">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1535, in finalize_request
+    response = self.make_response(rv)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1713, in make_response
+    rv = jsonify(rv)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py&quot;, line 348, in jsonify
+    f&quot;{dumps(data, indent=indent, separators=separators)}\n&quot;,
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py&quot;, line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File &quot;D:\tools\miniconda\Lib\json\__init__.py&quot;, line 234, in dumps
+    return cls(
+  File &quot;D:\tools\miniconda\Lib\json\encoder.py&quot;, line 201, in encode
+    chunks = list(chunks)
+  File &quot;D:\tools\miniconda\Lib\json\encoder.py&quot;, line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File &quot;D:\tools\miniconda\Lib\json\encoder.py&quot;, line 405, in _iterencode_dict
+    yield from chunks
+  File &quot;D:\tools\miniconda\Lib\json\encoder.py&quot;, line 325, in _iterencode_list
+    yield from chunks
+  File &quot;D:\tools\miniconda\Lib\json\encoder.py&quot;, line 438, in _iterencode
+    o = _default(o)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py&quot;, line 56, in default
+    return super().default(o)
+  File &quot;D:\tools\miniconda\Lib\json\encoder.py&quot;, line 179, in default
+    raise TypeError(f&#x27;Object of type {o.__class__.__name__} &#x27;
+TypeError: Object of type FrameSummary is not JSON serializable</textarea>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value="Confirm Pin">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1713, in make_response
+    rv = jsonify(rv)
+  File "D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py", line 348, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "D:\tools\miniconda\Lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "D:\tools\miniconda\Lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "D:\tools\miniconda\Lib\json\encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "D:\tools\miniconda\Lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "D:\tools\miniconda\Lib\json\encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "D:\tools\miniconda\Lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "D:\tools\miniconda\Lib\site-packages\flask\json\__init__.py", line 56, in default
+    return super().default(o)
+  File "D:\tools\miniconda\Lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FrameSummary is not JSON serializable
+
+-->
+
+
+2022-02-15 19:59:00,573    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data Copy(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+

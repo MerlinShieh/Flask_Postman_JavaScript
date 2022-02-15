@@ -1,0 +1,585 @@
+2022-02-15 19:46:13,357    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data()
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------778400282843619928456418","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"李艳","type":"string"},{"key":"age","value":"57","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 19:46:13,380    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data()：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 19:47:20,105    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data()
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------523050724346735378505721","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"宋艳","type":"string"},{"key":"age","value":"91","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 19:47:20,121    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data()：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 19:54:08,429    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data()
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------437786001797279898816274","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"吕艳","type":"string"},{"key":"age","value":"84","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 19:54:08,449    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data()：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 19:54:14,230    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data()
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------208546585734584557900450","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"蔡敏","type":"string"},{"key":"age","value":"93","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 19:54:14,248    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data()：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 19:54:31,169    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------868955309710808416678564","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"郑芳","type":"string"},{"key":"age","value":"47","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 19:54:31,184    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 19:54:35,306    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------356465781170630987977406","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"吕敏","type":"string"},{"key":"age","value":"69","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 19:54:35,326    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 19:56:38,594    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 JSON(使用前后置操作)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：{
+    "name": "孟艳",
+    "age": 86
+}
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":39,"system":true}],"method":"POST","body":{"mode":"raw","raw":"{\n    \"name\": \"孟艳\",\n    \"age\": 86\n}"},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": 86, 
+    "name": "\u5b5f\u8273"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-15 19:56:38,608    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 JSON(使用前后置操作)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [{"replace": "/", "value": "{"request_time":"{\"age\":86,\"name\":\"孟艳\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}", "prev": "{"request_time":"{\"age\":68,\"name\":\"韩秀英\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}"}], "glo": []}
+
+2022-02-15 19:57:53,133    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data Copy(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"disabled":true,"key":"Content-Type","value":"application/json,application/x-www-form-urlencoded,application/form-data"},{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":0,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[]},"type":"http"}
+返回结果：<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>KeyError: &#x27;Content-Type&#x27; // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css"
+        type="text/css">
+    <!-- We need to make sure this has a favicon so that the debugger does
+         not accidentally trigger a request to /favicon.ico which might
+         change the application's state. -->
+    <link rel="shortcut icon"
+        href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+    <script type="text/javascript">
+      var TRACEBACK = 2073430994656,
+          CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "dMvST8POsgsZG8NBdnSo";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>KeyError</h1>
+<div class="detail">
+  <p class="errormsg">KeyError: &#x27;Content-Type&#x27;</p>
+</div>
+<h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-2073430993216">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2088</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073430993792">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2073</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">                </span>error = e</pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre>
+<pre class="line after"><span class="ws">                </span>raise</pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)</pre>
+<pre class="line after"><span class="ws">        </span>finally:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073430993696">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2070</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)</pre>
+<pre class="line before"><span class="ws">        </span>error: t.Optional[BaseException] = None</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">                </span>error = e</pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073430993840">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1515</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre>
+<pre class="line after"><span class="ws">        </span>self,</pre>
+<pre class="line after"><span class="ws">        </span>rv: t.Union[ResponseReturnValue, HTTPException],</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073430992976">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1513</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>self.try_trigger_before_first_request_functions()</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073430993504">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1499</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>getattr(rule, &quot;provide_automatic_options&quot;, False)</pre>
+<pre class="line before"><span class="ws">            </span>and req.method == &quot;OPTIONS&quot;</pre>
+<pre class="line before"><span class="ws">        </span>):</pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()</pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Dispatches the request and on top of that performs request</pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class="line after"><span class="ws">        </span>error handling.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073430993264">
+  <h4>File <cite class="filename">"C:\Users\Merlin\AppData\Roaming\apifox\ExternalPrograms\api_JS_Py.py"</cite>,
+      line <em class="line">133</em>,
+      in <code class="function">test</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span>@app.route(&#x27;/test&#x27;, methods=[&#x27;POST&#x27;, &#x27;GET&#x27;])</pre>
+<pre class="line before"><span class="ws"></span>def test():</pre>
+<pre class="line before"><span class="ws">        </span>__methods = request.method</pre>
+<pre class="line before"><span class="ws">        </span>if True if __methods == &#x27;POST&#x27; or &#x27;GET&#x27; else False:</pre>
+<pre class="line before"><span class="ws">                </span># noinspection PyBroadException</pre>
+<pre class="line current"><span class="ws">                </span>print(dict(request.headers)[&#x27;Content-Type&#x27;])</pre>
+<pre class="line after"><span class="ws">                </span>print(dict(request.form))</pre>
+<pre class="line after"><span class="ws">                </span>try:</pre>
+<pre class="line after"><span class="ws">                        </span>return RespResult.success(data=request.get_json())</pre>
+<pre class="line after"><span class="ws">                </span>except:</pre>
+<pre class="line after"><span class="ws">                        </span>return RespResult.error(data=traceback.extract_stack())</pre></div>
+</div>
+</ul>
+  <blockquote>KeyError: &#x27;Content-Type&#x27;</blockquote>
+</div>
+
+<div class="plain">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File &quot;C:\Users\Merlin\AppData\Roaming\apifox\ExternalPrograms\api_JS_Py.py&quot;, line 133, in test
+    print(dict(request.headers)[&#x27;Content-Type&#x27;])
+KeyError: &#x27;Content-Type&#x27;</textarea>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value="Confirm Pin">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Merlin\AppData\Roaming\apifox\ExternalPrograms\api_JS_Py.py", line 133, in test
+    print(dict(request.headers)['Content-Type'])
+KeyError: 'Content-Type'
+
+-->
+
+
+2022-02-15 19:57:53,173    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data Copy(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 19:58:07,772    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data Copy(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":0,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[]},"type":"http"}
+返回结果：<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>KeyError: &#x27;Content-Type&#x27; // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css"
+        type="text/css">
+    <!-- We need to make sure this has a favicon so that the debugger does
+         not accidentally trigger a request to /favicon.ico which might
+         change the application's state. -->
+    <link rel="shortcut icon"
+        href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+    <script type="text/javascript">
+      var TRACEBACK = 2073431102800,
+          CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "dMvST8POsgsZG8NBdnSo";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>KeyError</h1>
+<div class="detail">
+  <p class="errormsg">KeyError: &#x27;Content-Type&#x27;</p>
+</div>
+<h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-2073431104912">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2088</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073431105056">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2073</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">                </span>error = e</pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre>
+<pre class="line after"><span class="ws">                </span>raise</pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)</pre>
+<pre class="line after"><span class="ws">        </span>finally:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073431103088">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2070</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)</pre>
+<pre class="line before"><span class="ws">        </span>error: t.Optional[BaseException] = None</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">                </span>error = e</pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073431102512">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1515</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre>
+<pre class="line after"><span class="ws">        </span>self,</pre>
+<pre class="line after"><span class="ws">        </span>rv: t.Union[ResponseReturnValue, HTTPException],</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073431103328">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1513</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>self.try_trigger_before_first_request_functions()</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073431105296">
+  <h4>File <cite class="filename">"D:\tools\miniconda\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1499</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>getattr(rule, &quot;provide_automatic_options&quot;, False)</pre>
+<pre class="line before"><span class="ws">            </span>and req.method == &quot;OPTIONS&quot;</pre>
+<pre class="line before"><span class="ws">        </span>):</pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()</pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Dispatches the request and on top of that performs request</pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class="line after"><span class="ws">        </span>error handling.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2073431102848">
+  <h4>File <cite class="filename">"C:\Users\Merlin\AppData\Roaming\apifox\ExternalPrograms\api_JS_Py.py"</cite>,
+      line <em class="line">133</em>,
+      in <code class="function">test</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span>@app.route(&#x27;/test&#x27;, methods=[&#x27;POST&#x27;, &#x27;GET&#x27;])</pre>
+<pre class="line before"><span class="ws"></span>def test():</pre>
+<pre class="line before"><span class="ws">        </span>__methods = request.method</pre>
+<pre class="line before"><span class="ws">        </span>if True if __methods == &#x27;POST&#x27; or &#x27;GET&#x27; else False:</pre>
+<pre class="line before"><span class="ws">                </span># noinspection PyBroadException</pre>
+<pre class="line current"><span class="ws">                </span>print(dict(request.headers)[&#x27;Content-Type&#x27;])</pre>
+<pre class="line after"><span class="ws">                </span>print(dict(request.form))</pre>
+<pre class="line after"><span class="ws">                </span>try:</pre>
+<pre class="line after"><span class="ws">                        </span>return RespResult.success(data=request.get_json())</pre>
+<pre class="line after"><span class="ws">                </span>except:</pre>
+<pre class="line after"><span class="ws">                        </span>return RespResult.error(data=traceback.extract_stack())</pre></div>
+</div>
+</ul>
+  <blockquote>KeyError: &#x27;Content-Type&#x27;</blockquote>
+</div>
+
+<div class="plain">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &quot;D:\tools\miniconda\Lib\site-packages\flask\app.py&quot;, line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File &quot;C:\Users\Merlin\AppData\Roaming\apifox\ExternalPrograms\api_JS_Py.py&quot;, line 133, in test
+    print(dict(request.headers)[&#x27;Content-Type&#x27;])
+KeyError: &#x27;Content-Type&#x27;</textarea>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value="Confirm Pin">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\tools\miniconda\Lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Merlin\AppData\Roaming\apifox\ExternalPrograms\api_JS_Py.py", line 133, in test
+    print(dict(request.headers)['Content-Type'])
+KeyError: 'Content-Type'
+
+-->
+
+
+2022-02-15 19:58:07,811    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data Copy(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+

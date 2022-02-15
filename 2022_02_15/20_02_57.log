@@ -1,0 +1,91 @@
+2022-02-15 20:02:59,982    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data Copy(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":0,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 20:02:59,998    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data Copy(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 20:03:28,306    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data Copy(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"disabled":true,"key":"Content-Type","value":"application/json,application/x-www-form-urlencoded,application/form-data"},{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":0,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 20:03:28,321    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data Copy(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 20:05:30,438    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"disabled":true,"key":"Content-Type","value":"application/json,application/x-www-form-urlencoded,application/form-data"},{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------995559926192226059036641","system":true},{"key":"Content-Length","value":269,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"宋超","type":"string"},{"key":"age","value":"76","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 20:05:30,454    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 20:05:37,555    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 form-data(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"disabled":true,"key":"Content-Type","value":"application/json,application/x-www-form-urlencoded,application/form-data"},{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Type","value":"multipart/form-data; boundary=--------------------------412847563512082968124004","system":true},{"key":"Content-Length","value":272,"system":true}],"method":"POST","body":{"mode":"formdata","formdata":[{"key":"name","value":"吕秀兰","type":"string"},{"key":"age","value":"52","type":"integer"}]},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": null, 
+  "message": "success"
+}
+
+
+2022-02-15 20:05:37,572    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 form-data(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-15 20:05:57,021    api_JS_Py.py    --->  [INFO]   _log   line:73  : 
+接口名称：测试接口 JSON(使用前后置操作)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：{
+    "name": "顾丽",
+    "age": 39
+}
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":39,"system":true}],"method":"POST","body":{"mode":"raw","raw":"{\n    \"name\": \"顾丽\",\n    \"age\": 39\n}"},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": 39, 
+    "name": "\u987e\u4e3d"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-15 20:05:57,037    api_JS_Py.py    --->  [INFO]   _log   line:73  : 测试接口 JSON(使用前后置操作)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [{"replace": "/", "value": "{"request_time":"{\"age\":39,\"name\":\"顾丽\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}", "prev": "{"request_time":"{\"age\":86,\"name\":\"孟艳\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}"}], "glo": []}
+

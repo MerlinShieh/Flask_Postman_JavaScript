@@ -1,0 +1,23 @@
+2022-02-15 20:12:17,930    api_JS_Py.py    --->  [INFO]   _log   line:77  : 
+接口名称：测试接口 JSON(使用前后置操作)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：{
+    "name": "郭磊",
+    "age": 39
+}
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":39,"system":true}],"method":"POST","body":{"mode":"raw","raw":"{\n    \"name\": \"郭磊\",\n    \"age\": 39\n}"},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": 39, 
+    "name": "\u90ed\u78ca"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-15 20:12:17,944    api_JS_Py.py    --->  [INFO]   _log   line:77  : 测试接口 JSON(使用前后置操作)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [{"replace": "/", "value": "{"request_time":"{\"age\":39,\"name\":\"郭磊\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}", "prev": "{"request_time":"{\"age\":39,\"name\":\"顾丽\"}","BASE_URL":"http://127.0.0.1:8801","BASE_URLS":{"default":"http://127.0.0.1:8801"}}"}], "glo": []}
+
