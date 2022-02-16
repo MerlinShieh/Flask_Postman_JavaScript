@@ -50,7 +50,9 @@ class Log:
         self.logger.setLevel(level=logging.DEBUG)
 
         # 日志级别
-        level = eval("logging." + self.level)
+        __LEVEL = ['debug', 'info', 'warning', 'error', 'crittcal']
+        level = eval("logging." + self.level) if self.level.lower() in __LEVEL else logging.debug
+            
         # 日志格式
         fmt = logging.Formatter('%(asctime)s    %(filename)s    --->  [%(levelname)s]   '
                                 '%(funcName)s   line:%(lineno)d  : %(message)s')
@@ -87,4 +89,5 @@ if __name__ == '__main__':
     logger.error('error message')
     logger.critical('critical message')
     logger.debug(logger.name)
+
     log.shutdown()

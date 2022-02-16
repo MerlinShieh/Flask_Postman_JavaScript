@@ -1,0 +1,50 @@
+2022-02-16 21:42:44,382    main.py    --->  [INFO]   test   line:66  : __method:POST
+2022-02-16 21:42:44,382    main.py    --->  [INFO]   test   line:71  : ContentType<class 'src.Request.Headers.ContentType'>
+2022-02-16 21:42:44,428    main.py    --->  [INFO]   _log   line:39  : 远程日志为: log, 
+接口名称：JSON 格式(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：{
+    "name": "戴勇",
+    "age": 89
+}
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":39,"system":true}],"method":"POST","body":{"mode":"raw","raw":"{\n    \"name\": \"戴勇\",\n    \"age\": 89\n}"},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": 89, 
+    "name": "\u6234\u52c7"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-16 21:42:44,453    tools.py    --->  [INFO]   check_environment   line:38  : JSON 格式(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
+2022-02-16 21:42:53,989    main.py    --->  [INFO]   test   line:66  : __method:POST
+2022-02-16 21:42:53,990    main.py    --->  [INFO]   test   line:71  : ContentType<class 'src.Request.Headers.ContentType'>
+2022-02-16 21:42:54,009    main.py    --->  [INFO]   _log   line:39  : 远程日志为: log, 
+接口名称：JSON 格式(成功)
+接口地址：http://127.0.0.1:8801/test
+接口方式：POST
+环境名称：测试环境
+实际数据：{
+    "name": "薛涛",
+    "age": 49
+}
+实际请求：{"url":{"protocol":"http","port":"8801","path":["test"],"host":["127","0","0","1"],"query":[],"variable":[]},"header":[{"key":"User-Agent","value":"apifox/1.0.0 (https://www.apifox.cn)"},{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"*/*","system":true},{"key":"Host","value":"127.0.0.1:8801","system":true},{"key":"Accept-Encoding","value":"gzip, deflate, br","system":true},{"key":"Connection","value":"keep-alive","system":true},{"key":"Content-Length","value":39,"system":true}],"method":"POST","body":{"mode":"raw","raw":"{\n    \"name\": \"薛涛\",\n    \"age\": 49\n}"},"type":"http"}
+返回结果：{
+  "code": 200, 
+  "data": {
+    "age": 49, 
+    "name": "\u859b\u6d9b"
+  }, 
+  "message": "success"
+}
+
+
+2022-02-16 21:42:54,024    tools.py    --->  [INFO]   check_environment   line:38  : JSON 格式(成功)：http://127.0.0.1:8801/test：
+环境变量变化为：{"env": [], "glo": []}
+
