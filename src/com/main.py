@@ -4,8 +4,9 @@ import json
 import traceback
 
 from concurrent.futures import ThreadPoolExecutor
-from src import app, logger as log, Response, Request, request, config
+from src import app, logger as log, Response, Request, request, BASE_PATH
 from src.tools import tools
+from cfg import config
 
 executor = ThreadPoolExecutor(5)
 # 初始化线程池 5
@@ -69,7 +70,7 @@ def test():
 			return Response.success(data=data)
 		except:
 			log.error(traceback.extract_stack())
-			return Response.error(data=traceback.extract_stack())
+			return Response.error(data=str(traceback.extract_stack()))
 	else:
 		return Response.error()
 
@@ -78,16 +79,22 @@ def test():
 def uploadfiles():
 	__methods = request.method
 	log.info('检查到文件上传，方式为：' + __methods)
-	if __methods == 'POST' or 'PUT':
-		# 获取文件类型的参数
-		try:
+	try:
+		if __methods == 'POST' or 'PUT':
+			# 获取文件类型的参数
 			file = request.files['file']
-			if file and tools.allowed_file(file.filename):
-				file.save(os.path.join(config.flask_config['__UPLOAD_FOLDER'], file.filename))
-				log.debug('文件上传成功！路径为：' + os.path.join(config.flask_config['__UPLOAD_FOLDER'], file.filename))
+			log.debug('文件为：' + file.name)
+			# if file and tools.allowed_file(file.filename):
+			# 	print(os.path.join(BASE_PATH + config.flask_config['__UPLOAD_FOLDER'], file.filename))
+			# 	print(BASE_PATH)
+			# 	file.save(os.path.join(BASE_PATH + config.flask_config['__UPLOAD_FOLDER'], file.filename))
+			# 	log.debug('文件上传成功！路径为：' + os.path.join(config.flask_config['__UPLOAD_FOLDER'], file.filename))
+			log.debug(os.path.join(BASE_PATH + config.flask_config['__UPLOAD_FOLDER'], file.filename))
 			return Response.success()
-		except:
-			return Response.error(data=traceback.extract_stack())
+	except:
+		log.error(traceback.extract_stack())
+		traceback.print_exc()
+		return Response.error(str(traceback.extract_stack()))
 
 
 """
@@ -102,6 +109,18 @@ def show_file(filename):
 			print(file_base64)
 			return RespResult.success(data=file_base64)
 """
+
+
+@app.route('/query/<uid>', methods=['POST', 'GET'])
+def query_uid(uid):
+	"""
+	GET http://hostname/query/<uid>
+	:param uid:
+	:return:
+	"""
+	log.info('查询成功')
+	return {'code': 200, 'message': 'Hello ' + uid}
+
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=8801, debug=True, use_reloader=True)

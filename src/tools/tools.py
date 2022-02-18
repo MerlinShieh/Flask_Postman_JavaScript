@@ -1,9 +1,13 @@
 import base64
+import configparser
 import json
+import os
+
 import json_tools
 from PIL import Image
-from src import logger as log
-from src.com import config
+
+
+# from cfg import config
 
 
 def show_img(data):
@@ -35,10 +39,25 @@ def check_environment(env, glo, req):
 		f.seek(2)
 		f.write(env + '\n')
 	msg = {"env": json_tools.diff(last_env, env), "glo": json_tools.diff(last_glo, glo)}
-	log.info(req + "：\n环境变量变化为：" + str(json.dumps(msg).encode('utf-8').decode("unicode_escape")) + "\n")
+	# log.info(req + "：\n环境变量变化为：" + str(json.dumps(msg).encode('utf-8').decode("unicode_escape")) + "\n")
 	return msg
 
 
 def allowed_file(filename):
-	log.debug('检查文件上传的格式，文件为：{}，检查格式为：{}'.format(filename, config.flask_config['__ALLOWED_EXTENSIONS']))
-	return '.' in filename and filename.rsplit('.', 1)[1] in config.flask_config['__ALLOWED_EXTENSIONS']
+	# log.debug('检查文件上传的格式，文件为：{}，检查格式为：{}'.format(filename, config.flask_config['__ALLOWED_EXTENSIONS']))
+	# return '.' in filename and filename.rsplit('.', 1)[1] in config.flask_config['__ALLOWED_EXTENSIONS']
+	return True
+
+
+def get_config():
+	config = configparser.ConfigParser()
+	from src import get_root_path
+	with open(get_root_path()+'/src/cfg/config.ini', encoding='UTF-8') as f:
+		return f.read()
+
+
+
+
+if __name__ == '__main__':
+
+	print(get_config())

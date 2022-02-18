@@ -1,6 +1,20 @@
+import configparser
+import logging
 from flask import Flask, request
 from src.tools.log import Log
-from src.com import config
+import os
+
+# 读取config.ini
+
+# BASE_PATH = os.getcwd().split('\\')[:-1]
+#
+# BASE_PATH = str('\\'.join(BASE_PATH))
+# print(BASE_PATH)
+
+
+def get_root_path(numb=2):
+	return '\\'.join(os.getcwd().split('\\')[:-numb])
+
 logger = Log(directory='../log').logger
 
 app = Flask(__name__)
