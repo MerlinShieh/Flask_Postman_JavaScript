@@ -47,6 +47,7 @@ class Log:
     def __logger(self):
         # 创建logger
         self.logger = logging.getLogger(self.log_name)
+        self.logger_name = self.log_name
         self.logger.setLevel(level=logging.DEBUG)
 
         # 日志级别
