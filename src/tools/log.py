@@ -6,6 +6,7 @@ import logging
 import time
 import os
 import colorlog
+_ROOT_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 
 class Log:
@@ -20,8 +21,11 @@ class Log:
         timeSecond = str(time.strftime("%H_%M_%S", time.localtime()))
         try:
             if not directory:
-                directory = timeDay
-                os.mkdir(r"{}".format(timeDay))
+                # __log_files = os.path.join(os.path.dirname(__file__), r'log')
+                
+                directory = os.path.join(_ROOT_PATH, r'src\log', timeDay)
+                os.mkdir(directory)
+                # os.mkdir(r"{}".format(timeDay))
             else:
                 os.mkdir(r"{}".format(directory))
         except FileExistsError:
@@ -82,8 +86,8 @@ class Log:
 
 
 if __name__ == '__main__':
-    log = Log()
-    logger = log.logger
+    L = Log()
+    logger = L.logger
     logger.debug('debug message ')
     logger.info('info message')
     logger.warning('warning message')
@@ -91,4 +95,4 @@ if __name__ == '__main__':
     logger.critical('critical message')
     logger.debug(logger.name)
 
-    log.shutdown()
+    L.shutdown()

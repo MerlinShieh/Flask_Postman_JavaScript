@@ -6,5 +6,5 @@ config = configparser.ConfigParser()
 config.read(os.path.join(config_path, r'config.ini'), encoding='UTF-8')
 
 if __name__ == '__main__':
-	print(config_path)
+	print(os.path.join(config_path, r'config.ini'))
 	print(config.sections())

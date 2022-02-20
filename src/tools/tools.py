@@ -1,21 +1,24 @@
 import base64
-import configparser
-import json
-import os
-
+import time
 import json_tools
+import os
 from PIL import Image
 
+
+_ROOT_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 # from cfg import config
 
 
-def show_img(data):
+def show_img(data, is_show=False):
 	image_data = base64.b64decode(data.split(',')[1])
-	with open('PayQRCode.jpeg', 'wb') as f:
+	temp_img_path = os.path.join(_ROOT_PATH, r'file\temp', str(int(time.time())))
+	# print(temp_img_path)
+	with open(temp_img_path+'.jpg', 'wb') as f:
 		f.write(image_data)
-	img = Image.open('PayQRCode.jpeg')
-	img.show()
+	if is_show:
+		img = Image.open(temp_img_path + '.jpg')
+		img.show()
 	return True
 
 
@@ -49,15 +52,14 @@ def allowed_file(filename):
 	return True
 
 
-def get_config():
-	config = configparser.ConfigParser()
-	from src import get_root_path
-	with open(get_root_path()+'/src/cfg/config.ini', encoding='UTF-8') as f:
-		return f.read()
+# def get_config():
+# 	config = configparser.ConfigParser()
+# 	from src import get_root_path
+# 	with open(get_root_path()+'/src/cfg/config.ini', encoding='UTF-8') as f:
+# 		return f.read()
 
 
 
 
 if __name__ == '__main__':
-
-	print(get_config())
+	print(_ROOT_PATH)
