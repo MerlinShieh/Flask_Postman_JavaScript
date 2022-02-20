@@ -7,9 +7,12 @@ from cfg import config
 
 _ROOT_PATH = os.path.dirname(os.path.dirname(__file__))
 
-print(config.get('path', 'is_update'))
+# print(config.get('path', 'is_update'))
 if config.get('path', 'is_update') == 'True':
-	log_path = os.path.join(_ROOT_PATH, r'src\log')
+	"""
+	判断是否需要更新配置 不需要的话就从配置读取 需要的话就写入配置
+	"""
+	log_path = os.path.join(_ROOT_PATH, r'files\log')
 	L = Log(directory=log_path)
 	
 	config.set('path', 'log_path', log_path)
